@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const div=document.createElement('div');
+        console.log(div);
+        div.className="demo";
+        // div.id="main"
+        div.id=(Math.round(Math.random()*10+1));
+        // console.log(div.id);
+        div.setAttribute('title','mainContent');
+        div.style.backgroundColor="green";
+        div.style.padding="10px";
+        // div.innerText="Create HTML element";
+        const addText=document.createTextNode("Add New Element");
+        div.appendChild(addText);
+        document.body.appendChild(div);
+    </script>
+</body>
+</html>
