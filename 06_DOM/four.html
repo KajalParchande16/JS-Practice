@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color:#fff">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addElement(name)
+    {
+        const newEl=document.createElement('li');
+        newEl.innerHTML=`${name}`;
+        document.querySelector('.language').appendChild(newEl);
+    }
+    addElement('Angular');
+    addElement('React');
+
+function addOptinalLang(lName)
+{
+    const li=document.createElement('li');
+    li.appendChild(document.createTextNode(`${lName}`));
+    document.querySelector('.language').appendChild(li);
+    // this is best way bcoz it's not traversing whole dom
+}
+addOptinalLang('Nextjs');
+
+
+// Edit
+const secondLan=document.querySelector('li:nth-child(2)');
+// secondLan.innerHTML="Mojo"; we can directly edit it
+// const newEl=document.createTextNode('Mojo');
+const newEl=document.createElement('li');
+console.log(newEl);
+newEl.textContent="Mojo";
+secondLan.replaceWith(newEl);
+
+const lastLang=document.querySelector('li:last-child');
+lastLang.remove();
+</script>
+</html>
