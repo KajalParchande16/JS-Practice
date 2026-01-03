@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <h2>Amazing Images</h2>
+        <ul id="images">
+            <li><img width="200px" id="img1" src="https://images.pexels.com/photos/29254102/pexels-photo-29254102.jpeg"
+                    alt="img1" onclick="alert('First Image')"></li>
+            <li><img width="200px" id="img2" src="https://images.pexels.com/photos/7478696/pexels-photo-7478696.jpeg"
+                    alt="img2"></li>
+            <li><img width="200px" id="img3" src="https://images.pexels.com/photos/26612666/pexels-photo-26612666.jpeg"
+                    alt="img3"></li>
+            <li><a id="google" href="https://google.com">Google</a></li>
+        </ul>
+    </ul>
+</body>
+<script>
+    // document.getElementById('img2').onclick=function(){
+    //     alert("Image 2")
+    // };
+
+    // document.getElementById('img3').addEventListener('click',function(e){
+    //     alert("Image 3");
+    //     console.log(e);
+    // },false)
+
+    //  document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("Click Inside Ul");
+    //  },false);
+
+    //  document.getElementById('img3').addEventListener('click',function(e){
+    //     console.log("Click Image 3");
+    //     e.stopPropagation();
+    //  },false);
+    //  document.getElementById('google').addEventListener('click',function(e){
+    //     // consoel.log(e);
+    //     console.log("Google link");
+    //     e.preventDefault();
+    //  },false);
+
+    //  here ul event & li(image 3) event so it will work as inside to outside
+    // if we don't want this just add true
+    // or use stopPropagation();
+
+    // if we restrict redirect link use preventDefault();
+
+    // hide image on click on that img
+
+    document.querySelector('#images').addEventListener('click', function (e) {
+        console.log(e);
+        // console.log(e.target); //it will give only img but we have to delete whole li
+        console.log(e.target.parentNode); //it will give whole li
+        console.log(e.target.tagName);
+        if(e.target.tagName==='IMG')
+        {
+            const removeIt = e.target.parentNode;
+            removeIt.remove();
+        }
+
+        // const removeIt
+
+    }, false)
+</script>
+
+</html>
