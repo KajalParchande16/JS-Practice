@@ -1,19 +1,28 @@
-const promiseTask=new Promise(function(resolve,reject){
-// DB connection
-setTimeout(() => {
-    console.log("Async task is completed");
-    resolve();
-}, 1000);
+const promiseTask = new Promise(function (resolve, reject) {
+    // DB connection
+    setTimeout(() => {
+        console.log("Async task is completed");
+        resolve();
+    }, 1000);
 });
-promiseTask.then(function(){
+promiseTask.then(function () {
     console.log("Promise is cosumed")
 });
 
-new Promise((res,rej)=>{
+new Promise((res, rej) => {
     setTimeout(() => {
         console.log("Async Task 2");
         res();
     }, 2000);
-}).then(()=>{
+}).then(() => {
     console.log("Promise is comsumed by then")
+});
+
+const promiseThree = new Promise((res, rej) => {
+    setTimeout(() => {
+        res({ name: 'HarmanPret', role: 'Captain', score: '3680' });
+    }, 3000);
+});
+promiseThree.then((data) => {
+    console.log(data);
 })
