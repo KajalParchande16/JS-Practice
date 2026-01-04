@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Advance API Concept</h2>
+</body>
+<script>
+    const xhr=new XMLHttpRequest();
+    xhr.open('Get','https://jsonplaceholder.typicode.com/users');
+//    console.log(xhr.readyState);
+   xhr.onreadystatechange=function(){
+      
+    //    console.log(xhr.readyState);
+       if(xhr.readyState ==4)
+       {
+        // let data=this.responseText;
+        // console.log(typeof data);
+        // console.log(data.name)//get undefined bcoz get string data
+        // need to convert to json 
+        let data=JSON.parse(this.responseText);
+        console.log(data);
+        console.log(data[1]);
+       }
+   }
+   xhr.send();
+</script>
+</html>
