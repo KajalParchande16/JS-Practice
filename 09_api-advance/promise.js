@@ -25,4 +25,33 @@ const promiseThree = new Promise((res, rej) => {
 });
 promiseThree.then((data) => {
     console.log(data);
+});
+
+const promiseFour = new Promise((res, rej) => {
+    setTimeout(() => {
+        let error = false;
+        if (!error) {
+            res({ name: 'Smriti', role: 'Vice-Captain' });
+        }
+        else {
+            rej("Error:Something went erong");
+        }
+    }, 4000);
+
+});
+
+// promise chaining
+promiseFour.then((user) => {
+    // console.log(user.name);
+    // if we return something then again it work like promise
+    return user.name;
 })
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((error) => {
+        console.log(error);
+    })
+    .finally(() => {
+        console.log("Finally promise is resolved or rejected")
+    })
