@@ -6,6 +6,10 @@ class User {
     logMe() {
         return `${this.userName}`;
     }
+
+   static createdId(){
+            return `1234`;
+    }
 }
 
 class Teacher extends User {
@@ -32,6 +36,9 @@ console.log(principlle instanceof Teacher);
 console.log(principlle instanceof User);
 console.log(userOne instanceof Teacher);
 console.log(userOne instanceof User);
+
+// static property
+console.log(principlle.createdId()); //can't access static propety of parent class
 
 
 
