@@ -17,3 +17,13 @@ let newTeam=teamdata;
 newTeam.name="Indian Team A"
 console.log(teamdata);
 console.log(newTeam);
+
+let user={
+    name:'Pratiksha',
+    role:'user'
+}
+// deep copy
+let user2=JSON.parse(JSON.stringify(user));
+user2.name="Mrunal";
+console.log(user2);
+console.log(user);
