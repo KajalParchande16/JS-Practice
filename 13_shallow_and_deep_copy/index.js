@@ -27,3 +27,25 @@ let user2=JSON.parse(JSON.stringify(user));
 user2.name="Mrunal";
 console.log(user2);
 console.log(user);
+
+const user3 = {
+  name: 'A',
+  address: { city: 'Pune' },
+};
+
+const copy = { ...user3 };
+
+copy.address.city = 'Mumbai';
+
+console.log(user3.address.city); 
+
+
+const user4 = {
+  name: 'A',
+  skills: ['JS', 'Angular'],
+};
+
+const copy1 = { ...user4 };
+copy1.skills.push('Node');
+
+console.log(user4.skills);
