@@ -12,3 +12,9 @@ function addingNo(a,b)
 {
     console.log(a+b);
 }
+
+sumNum(100,200);
+var sumNum=function(a,b)
+{
+    console.log(a+b);
+}
