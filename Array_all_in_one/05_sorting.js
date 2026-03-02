@@ -12,3 +12,7 @@ console.log(arr2.sort((a,b)=>a-b)); //assending order
 // 23-56=>-33 -ve no so it will return 1st element 23
 
 console.log(arr2.sort((a,b)=>b-a)); //decending order
+
+let newArr=[10,'Kajal',true,"Priya","Uma",44];
+console.log(newArr.sort());
+// console.log(newArr.sort((a,b)=>a-b));
