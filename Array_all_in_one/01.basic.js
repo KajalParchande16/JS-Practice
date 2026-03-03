@@ -24,4 +24,9 @@ let newArr=[1,2,3,4,5,6,7,8];
 newArr.splice(0,3,"Kajal");
 console.log(newArr);
 
+let newArr1=[10,20,"Kajal",true];
+
+newArr1["name"]="Richa";
+console.log(newArr1);
+
 
