@@ -35,3 +35,16 @@ const products = [
 let newArr=products.filter((item)=>item.price>100).sort((a,b)=>a.price -b.price).map((e)=>({name:e.name,price:e.price}));
 console.log(newArr);
 // this is called chaining
+
+// reducer
+const total=products.reduce((accumulator,currentVal)=>{
+  if(currentVal.inStock)
+  {
+
+    return accumulator+currentVal.price;
+  }
+  else{
+    return accumulator;
+  }
+},0);
+console.log(total);
