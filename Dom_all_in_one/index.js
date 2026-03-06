@@ -15,10 +15,13 @@ list1.textContent="Jemi";
 const list2=document.createElement('li');
 list2.textContent="Harman";
 
+const list3=document.createElement('li');
+list3.textContent="Sneh";
 
 const ul=document.getElementById('unorderList');
 ul.append(list1);
 ul.prepend(list2);
+ul.children[1].after(list3);
 
 
 const arr=["Radha","Richa","Sneh","Renuka","Pratika"];
