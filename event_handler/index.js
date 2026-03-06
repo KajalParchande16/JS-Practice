@@ -6,14 +6,24 @@
 // }
 
     const element=document.getElementById('indw');
-    element.onclick=function eventHandler()
-    {
-        element.textContent="Ind vs Aus Test Match"
-    }
-    element.onclick=function eventHandler()
-    {
-        element.style.backgroundColor="red";
-    }
+    // element.onclick=function eventHandler()
+    // {
+    //     element.textContent="Ind vs Aus Test Match"
+    // }
+    // element.onclick=function eventHandler()
+    // {
+    //     element.style.backgroundColor="red";
+    // }
 
-    
+    element.addEventListener("click",()=>{
+        element.textContent="Ind playing against aust";
+    })
+
+    element.addEventListener("click",()=>{
+        // element.textContent="Ind playing against aust";
+        element.style.backgroundColor="pink";
+    })
+
+
+
 
