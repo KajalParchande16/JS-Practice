@@ -9,6 +9,8 @@ console.log("Parent Clicked")
 });
 
 const child=document.getElementById('child');
-child.addEventListener('click',()=>{
-console.log("child Clicked")
+child.addEventListener('click',(e)=>{
+// console.log("child Clicked");
+console.log(e);
+e.stopPropagation();
 },true);
