@@ -29,11 +29,15 @@ const arr=["Radha","Richa","Sneh","Renuka","Pratika"];
 const ul1=document.createElement('ul');
 console.log(ul1)
 
+const fragment=document.createDocumentFragment();
 for (const element of arr) {
 
     const li=document.createElement('li');
     li.textContent=element;
-    ul1.append(li);
+    // ul1.append(li);
+    fragment.append(li);
     
 }
+    ul1.append(fragment);
+
 document.body.append(ul1);
