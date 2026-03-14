@@ -6,15 +6,16 @@
 div {
     height: 1200px;
     background-color: burlywood;
-    position: relative;
+    /* position: relative; */
 }
 
 h3 {
-    background-color: black;
+    background-color: rgb(213, 156, 156);
     color: white;
     position: fixed;
     top: 0;
     left: 150px;
+    z-index: 20;
 }
 
 h4 {
@@ -27,6 +28,7 @@ h4 {
 p {
     position: absolute;
     top: 0;
-    left: 500px;
-    background-color: aqua;
+    left: 150px;
+    background-color: rgb(255, 98, 0);
+    z-index: 10;
 }
