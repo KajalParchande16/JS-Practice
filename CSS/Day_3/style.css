@@ -1,0 +1,14 @@
+div {
+    background-color: aqua;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: larger;
+    height: 200px;
+    width: 200px;
+}
+
+span {
+    background-color: cornflowerblue;
+    height: 200px;
+    width: 200px;
+}
