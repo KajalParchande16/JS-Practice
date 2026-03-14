@@ -1,0 +1,11 @@
+div{
+    background-color: blueviolet;
+    margin: 10px;
+    display: inline-block;
+    height:200px;
+    width:200px
+}
+span{
+    display:block;
+    background-color: brown;
+}
