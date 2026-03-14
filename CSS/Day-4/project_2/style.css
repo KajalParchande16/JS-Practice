@@ -1,0 +1,43 @@
+ #outer {
+     background-color: yellow;
+     width: 300px;
+     height: 200px;
+     position: relative;
+ }
+
+ .box {
+     background-color: rgb(36, 121, 212);
+     box-sizing: border-box;
+ }
+
+ .first,
+ .third {
+     width: 85px;
+     height: 85px;
+ }
+
+ .third {
+     position: absolute;
+     bottom: 0;
+
+ }
+
+ .second,
+ .forth {
+     width: 175px;
+     height: 85px;
+ }
+
+ .second {
+
+     position: absolute;
+     top: 0;
+     right: 0;
+ }
+
+ .forth {
+
+     position: absolute;
+     bottom: 0;
+     right: 0;
+ }
