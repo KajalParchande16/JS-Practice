@@ -1,0 +1,12 @@
+div {
+    background-color: rgb(60, 30, 210);
+
+}
+
+h1 {
+    background-color: darkgoldenrod;
+    position: relative;
+    left: 40px;
+    /* right: 50px; */
+    top: 30px;
+}
