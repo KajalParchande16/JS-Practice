@@ -1,0 +1,15 @@
+div {
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    display: inline;
+}
+
+span {
+    display: block;
+    height: 50px;
+    margin: 10px;
+    background-color: chocolate;
+    padding: 10px;
+}
