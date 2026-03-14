@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    height: 1200px;
+    background-color: burlywood;
+    position: relative;
+}
+
+h3 {
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 150px;
+}
+
+h4 {
+    background-color: rgba(72, 4, 4, 0.845);
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+p {
+    position: absolute;
+    top: 0;
+    left: 500px;
+    background-color: aqua;
+}
