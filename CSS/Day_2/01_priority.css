@@ -1,0 +1,24 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+h1 {
+    background-color: aqua;
+}
+
+h2 {
+    background-color: coral;
+}
+
+.exe {
+    background-color: darkgoldenrod;
+}
+
+#second {
+    background-color: rgb(163, 181, 7);
+    border: solid 5px black;
+    padding: 10px;
+    margin: 15px;
+    /* width: 200px;
+    box-sizing: border-box; */
+}
