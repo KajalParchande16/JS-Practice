@@ -7,8 +7,20 @@ div {
     width: 200px;
 }
 
-span {
+/* span {
     background-color: cornflowerblue;
     height: 200px;
     width: 200px;
+} */
+#first {
+    background-color: cornflowerblue;
+    /* /* padding: 20px; */
+    margin: 10px;
+
+}
+
+#second {
+    background-color: rgb(186, 104, 32);
+    padding: 20px;
+
 }
