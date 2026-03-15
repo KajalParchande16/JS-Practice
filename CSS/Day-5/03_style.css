@@ -6,7 +6,7 @@
     height: 600px;
     flex-direction: row;
     /* flex-direction: column; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* check in responsive view */
     /* instead of giving margin to child use gap property */
     /* hide margin from box class */
@@ -30,6 +30,9 @@
 
 .second {
     background-color: green;
+    flex-shrink: 4;
+    /* remove flex-wrap from parent */
+    /* responsive ke time 2nd div sabse pehle strink hoga */
 }
 
 .third {
