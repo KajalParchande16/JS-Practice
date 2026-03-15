@@ -1,0 +1,40 @@
+#container {
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 600px;
+    flex-direction: row;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* check in responsive view */
+    /* instead of giving margin to child use gap property */
+    /* hide margin from box class */
+    gap: 5px;
+
+
+    /* justify-content->main axi ke arround kam krta hai 
+    main-axix decide kon krega ->aapka flex-direction*/
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    /* margin: 5px; */
+}
+
+.first {
+    background-color: red;
+}
+
+.second {
+    background-color: green
+}
+
+.third {
+    background-color: orange;
+}
+
+.forth {
+    background-color: chartreuse;
+}
