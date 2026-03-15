@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 600px;
-    flex-direction: row;
+    flex-direction: column;
     /* flex-direction: column; */
     /* flex-wrap: wrap; */
     /* check in responsive view */
@@ -42,4 +42,9 @@
 
 .forth {
     background-color: chartreuse;
+    flex-basis: 300px;
+    /* this is not width
+    if flex-direction:row ->it will adjust width,
+    if flex-direction:column->it will adjust height
+    */
 }
